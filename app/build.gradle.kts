@@ -1,8 +1,9 @@
 plugins {
     id("com.android.application")
     id("kotlin-android")
-    id("kotlin-kapt")
     id("dagger.hilt.android.plugin")
+    id("kotlin-kapt")
+
 }
 
 android {
@@ -51,6 +52,10 @@ dependencies {
     testImplementation(TestTool.JUNIT)
     androidTestImplementation(TestTool.ANDROID_X_JUNIT)
     androidTestImplementation(TestTool.ANDROID_X_ESPRESSO)
+
+
+    // Timber
+    implementation(Timber.TIMBER)
 
     // dager hilt
     implementation(DaggerHilt.DAGGER_HILT)

@@ -1,8 +1,8 @@
 plugins {
     id ("com.android.library")
     id ("kotlin-android")
-    id ("kotlin-kapt")
     id ("dagger.hilt.android.plugin")
+    id ("kotlin-kapt")
 }
 
 android {
@@ -41,6 +41,9 @@ dependencies {
     androidTestImplementation (TestTool.ANDROID_X_ESPRESSO)
     implementation (Firebase.FIREBASE_DATABASE_KTX)
     implementation (Firebase.FIREBASE_FIRESTORE_KTX)
+
+    // Timber
+    implementation(Timber.TIMBER)
 
     // Retrofit
     implementation (Retrofit.RETROFIT)

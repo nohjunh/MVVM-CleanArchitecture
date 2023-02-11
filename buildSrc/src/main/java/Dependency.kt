@@ -86,3 +86,7 @@ object Library {
     const val NOTIFICATION_BAR_CUSTOM = "com.github.ParkSangSun1:NotificationBarCustom:1.0.3"
     const val COUNT_NUMBER_EVENT = "com.github.ParkSangSun1:CountNumberEvent:1.0.4"
 }
+
+object Timber {
+    const val TIMBER = "com.jakewharton.timber:timber:4.7.1"
+}

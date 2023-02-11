@@ -1,8 +1,8 @@
 plugins {
     id ("com.android.library")
     id ("kotlin-android")
-    id ("kotlin-kapt")
     id ("dagger.hilt.android.plugin")
+    id ("kotlin-kapt")
 }
 
 android {
@@ -46,9 +46,15 @@ dependencies {
     implementation (AndroidX.LEGACY)
     implementation (Firebase.FIREBASE_DATABASE_KTX)
     implementation (Firebase.FIREBASE_FIRESTORE_KTX)
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("com.google.android.material:material:1.4.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     testImplementation (TestTool.JUNIT)
     androidTestImplementation (TestTool.ANDROID_X_JUNIT)
     androidTestImplementation (TestTool.ANDROID_X_ESPRESSO)
+
+    // Timber
+    implementation(Timber.TIMBER)
 
     // dagger hilt
     implementation (DaggerHilt.DAGGER_HILT)
