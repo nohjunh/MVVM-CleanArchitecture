@@ -8,14 +8,14 @@ plugins {
 
 android {
     namespace = "com.nohjunh.test"
-    compileSdk = 33
+    compileSdk = SdkVersions.compileSdk
 
     defaultConfig {
         applicationId = "com.nohjunh.test"
-        minSdk = 21
-        targetSdk = 32
-        versionCode = 1
-        versionName = "1.0"
+        minSdk = SdkVersions.minSdk
+        targetSdk = SdkVersions.targetSdk
+        versionCode = AppVersions.androidVersionCode
+        versionName = AppVersions.androidVersionName
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -34,6 +34,7 @@ android {
         jvmTarget = "1.8"
     }
     buildFeatures {
+        viewBinding = true
         dataBinding = true
     }
 }

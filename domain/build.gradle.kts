@@ -7,11 +7,11 @@ plugins {
 
 android {
     namespace = "com.nohjunh.domain"
-    compileSdk = 33
+    compileSdk = SdkVersions.compileSdk
 
     defaultConfig {
-        minSdk = 21
-        targetSdk = 33
+        minSdk = SdkVersions.minSdk
+        targetSdk = SdkVersions.targetSdk
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")

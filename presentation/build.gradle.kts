@@ -7,11 +7,11 @@ plugins {
 
 android {
     namespace = "com.nohjunh.presentation"
-    compileSdk = 33
+    compileSdk = SdkVersions.compileSdk
 
     defaultConfig {
-        minSdk = 21
-        targetSdk = 33
+        minSdk = SdkVersions.minSdk
+        targetSdk = SdkVersions.targetSdk
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
@@ -31,6 +31,7 @@ android {
         jvmTarget = "1.8"
     }
     buildFeatures {
+        viewBinding = true
         dataBinding = true
     }
 }
