@@ -27,6 +27,7 @@
             android:textStyle="bold" />
 
         <EditText
+            android:id="@+id/womanET"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -35,6 +36,7 @@
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/nextBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/name_setting_btn_frame"
